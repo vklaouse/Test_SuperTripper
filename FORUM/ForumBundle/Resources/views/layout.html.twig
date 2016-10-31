@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Forum{% endblock %}</title>
+  </head>
+  <body>
+  	<div style="width:400px; height:100px; border:solid 1px;">
+  		{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+			<p>Connecté</p> 
+		{% else %}
+        <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+        <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+			<p>Non connecté</p>
+		{% endif  %}
+	</div>
+    	{% block body %}
+    	{% endblock %}
+   	<div style="width:400px; height:100px; border:solid 1px;">Footer</div>
+  </body>
+</html>

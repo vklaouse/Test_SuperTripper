@@ -1,0 +1,8 @@
+{% extends "FORUMForumBundle::layout.html.twig" %}
+	{% block body %}
+		{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+			<p>Connecté</p> 
+		{% else %}
+			<p>Non connecté</p>
+		{% endif  %}
+	{% endblock %}

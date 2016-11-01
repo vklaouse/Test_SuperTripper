@@ -2,3 +2,13 @@ forum_forum_homepage:
     path:     /
     defaults: 
       _controller: FORUMForumBundle:Forum:index
+
+forum_forum_threadpage:
+    path:     /thread
+    defaults: 
+      _controller: FORUMForumBundle:Forum:thread
+
+forum_forum_messagepage:
+    path:     /message
+    defaults: 
+      _controller: FORUMForumBundle:Forum:message

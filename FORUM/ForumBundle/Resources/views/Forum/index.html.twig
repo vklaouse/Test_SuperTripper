@@ -1,8 +1,8 @@
 {% extends "FORUMForumBundle::layout.html.twig" %}
 	{% block body %}
 		{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-			<p>Connecté</p> 
+			<br><br><br><br><h1>Bienvenue, vous pouvez accéder à la discussion en cliquant sur le boutton dédié.</h1>
 		{% else %}
-			<p>Non connecté</p>
+			<br><br><br><br><h1>Veuillez vous connecter pour accéder à la discussion.</h1>
 		{% endif  %}
 	{% endblock %}

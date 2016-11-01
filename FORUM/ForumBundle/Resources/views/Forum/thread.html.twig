@@ -1,0 +1,19 @@
+{% extends "FORUMForumBundle::layout.html.twig" %}
+{% block body %}
+
+<center>
+	<div class="message" >
+	{% for thread in messages %}
+	<article>
+			<p class="date" >{{thread.date|date('d m Y')}}</p>
+			<p class="Nom" >{{thread.username}}</p>
+			<p class="commentaire" >{{thread.message}}</p>
+	</article>
+	{% endfor %}
+	</div>
+	<form method="POST" action="{{ path('forum_forum_threadpage') }}">
+		{{form_widget(form)}}
+		<input class="button" type="submit" Value="Envoyer">
+	</form>
+</center>
+{% endblock %}

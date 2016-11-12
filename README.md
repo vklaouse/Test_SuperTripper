@@ -11,7 +11,11 @@ To launch the project go to the folder TwitterChallenge, run in your terminal
 And run the server
 *     `node server.js & open http://localhost:8080`
 
+To interrupt the execution of the server
+*     `fg` + `Ctrl + c`
 
+You can change search hashtags
+*     `./Configuration "YourFirstHashtag" "YourSecondtHashtag" ...`
 
 
 Vivien

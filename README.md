@@ -3,13 +3,15 @@
 To run the project you need to install node.js (https://nodejs.org/en/).
 
 When it's done open your terminal and run :
-   `git clone ~/ TwitterChallenge`
+*     `git clone ~/ TwitterChallenge`
 
 To launch the project go to the folder TwitterChallenge, run in your terminal
-   `cd ~/TwitterChallenge`
+*     `cd ~/TwitterChallenge`
    
- And run the server
-   `node server.js & open http://localhost:8080`
+And run the server
+*     `node server.js & open http://localhost:8080`
+
+
 
 
 Vivien
